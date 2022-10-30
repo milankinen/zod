@@ -10,8 +10,8 @@ for (const suite of [
   ...primitiveBenchmarks.suites,
   ...stringBenchmarks.suites,
   ...objectBenchmarks.suites,
-  ...unionBenchmarks.suites,
-  ...discriminatedUnionBenchmarks.suites,
+  //...unionBenchmarks.suites,
+  //...discriminatedUnionBenchmarks.suites,
 ]) {
   suite.run();
 }

@@ -55,6 +55,11 @@ export interface ParseContext {
   readonly parsedType: ZodParsedType;
 }
 
+export interface ParseCtx {
+  readonly contextualErrorMap?: ZodErrorMap
+  readonly async: boolean
+}
+
 export type ParseInput = {
   data: any;
   path: (string | number)[];
